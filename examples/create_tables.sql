@@ -1,0 +1,11 @@
+-- create_tables.sql
+CREATE TABLE IF NOT EXISTS people (
+  id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  age INTEGER
+);
+
+CREATE TABLE IF NOT EXISTS demo (
+  id INTEGER PRIMARY KEY,
+  msg TEXT
+);
