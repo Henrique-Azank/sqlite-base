@@ -79,3 +79,35 @@ sqlite> select *
    ...> limit 10
 ```
 
+## Outputting queries to files 
+
+We can save the results of a query using the output command. All subsequent queries will be saved to the file in question.
+
+```bash
+# Sets ups the file as the destination of the queries
+.output FILE_NAME
+
+... 
+
+# Returns the output back to the terminal
+.output
+```
+
+If we wish to save the result of only the next query, we can use the once command
+
+```bash
+# Sets up the file as the return for the next query
+.once FILE_NAME
+```
+
+## Executing SQL commands from a file 
+
+We can execute SQL commands saved in a certain file either by using: 
+
+```bash
+# UNIX Syntax
+sqlite3 database.db < commands.sql
+
+# SQLite commands
+.read ./commands.sql
+```
