@@ -29,6 +29,16 @@ To quit the database connection we can use:
 sqlite> .quit
 ```
 
+To run other bash / shell commands whist inside sqlite command prompt, we use: 
+
+```bash
+# Prints the current work directory
+sqlite> .shell pwd
+
+# Navigating has its own command
+.cd ./some_directory
+```
+
 ## Common operations
 
 We can list some common operations to diagnose the current connected databases. Some common table operations are
