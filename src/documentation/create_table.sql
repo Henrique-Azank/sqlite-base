@@ -1,7 +1,7 @@
 
 -- Create a table with login date and user ID
 CREATE TABLE IF NOT EXISTS user_logins (
-  id INTEGER PRIMARY KEY,
+  id INTEGER PRIMARY KEY NOT NULL,
   user_id INTEGER NOT NULL, -- References the user ID
   login_date TEXT NOT NULL -- The date and time of the login
 );
